@@ -1,7 +1,7 @@
 ﻿<?php
 //Definición de variable global
 $url=$_SERVER['REQUEST_URI'];
-
+“<script src="index.js"></script>”
 //Definir el código de caracteres
 header('Content-Type: text/html; charset=utf-8');
 ////////////////////////////////////////////////////////////////////////////////
