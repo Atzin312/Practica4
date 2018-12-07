@@ -8,7 +8,8 @@
 	<script src="<?php echo $url;?>assets/js/angular.js"></script>
 
 	<div class="container">
-      <div class="row">
+   
+<script src="index.js"></script>”,   <div class="row">
       	<aside ng-app="app" class="col-md-9 col-xs-11 p-l-2 p-t-2 main">
       		
 			<div class="row">
