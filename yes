@@ -1,0 +1,41 @@
+warning: LF will be replaced by CRLF in includes/views/index.view.php.
+The file will have its original line endings in your working directory
+[1mdiff --git a/includes/views/index.view.php b/includes/views/index.view.php[m
+[1mindex 7e1e198..c72fa44 100644[m
+[1m--- a/includes/views/index.view.php[m
+[1m+++ b/includes/views/index.view.php[m
+[36m@@ -1,4 +1,4 @@[m
+[31m-<?php require_once(VIEW_PATH.'header.inc.php'); ?>[m
+[32m+[m[32m﻿<?php require_once(VIEW_PATH.'header.inc.php'); ?>[m
+ [m
+ 	[m
+ 	<link href="<?php echo $url;?>assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">[m
+[36m@@ -29,7 +29,7 @@[m
+ 				    <tr>[m
+ 				      <th>#</th>[m
+ 				      <th>Nombre</th>[m
+[31m-				      <th>Fecha</th>[m
+[32m+[m				[32m      <th>Telefono</th>[m
+ 				      <th><button ng-click="add()" class="btn btn-success btn-sm"><i class="fa fa-file-o" aria-hidden="true"></i></button>&nbsp;Nuevo</th>[m
+ 				    </tr>[m
+ 				  </thead>[m
+[36m@@ -37,7 +37,7 @@[m
+ 				  		<tr ng-repeat="persona in personas track by $index">[m
+ 				  			<td>{{ persona.id }}</td>[m
+ 				  			<td>{{ persona.nombre }}</td>[m
+[31m-							<td>{{ persona.fechaCreacion|limitTo:10 }}</td>[m
+[32m+[m							[32m<td>{{ persona.telefono|limitTo:10 }}</td>[m
+ 							<td>[m
+ 								<button class="btn btn-primary btn-sm" ng-click="view(persona.id)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editar</button> &nbsp;[m
+ 								<button class="btn btn-danger btn-sm" ng-click="delete(persona.id)" data-toggle='confirmation' data-singleton='true' data-placement='top'>  <i class="fa fa-times" aria-hidden="true"></i>Borrar</button>[m
+[36m@@ -63,7 +63,9 @@[m
+ 		                                <input ng-model="persona.nombre" class="form-control" required>[m
+ 		                            </div>[m
+ 		                        </div>[m
+[31m-		                        <div class="form-group row">[m
+[32m+[m		[32m                       <div class="col-md-11">[m
+[32m+[m		[32m                                <label>Telefono</label>[m
+[32m+[m		[32m                                <input ng-model="persona.telefono" class="form-control" required>  <div class="form-group row">[m
+ 		                            <div class="col-md-11">[m
+ 		                                <label>Dirección</label>[m
+ 		                                <input ng-model="persona.direccion" class="form-control" required>[m
